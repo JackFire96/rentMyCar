@@ -1,0 +1,7 @@
+{
+  "name": "rentMyCar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

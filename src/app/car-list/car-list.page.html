@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Liste des voitures</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let car of cars">
+      <ion-thumbnail slot="start">
+        <img [src]="car.image1" alt="{{ car.brand }}" />
+        <img [src]="car.image2" alt="{{ car.brand }}" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ car.brand }}</h2>
+        <p>Modèle : {{ car.model }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" routerLink="/add-car" style="margin-bottom: 10px;">
+    Ajouter une nouvelle voiture
+  </ion-button>
+</ion-content>

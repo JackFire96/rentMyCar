@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajouter une voiture</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onAddCar()">
+    <ion-item>
+      <ion-label position="floating">Marque</ion-label>
+      <ion-input type="text" [(ngModel)]="car.brand" name="brand" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Modèle</ion-label>
+      <ion-input type="text" [(ngModel)]="car.model" name="model" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">plaque d'immatriculation</ion-label>
+      <ion-input type="text" [(ngModel)]="car.immatriculation" name="price" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">image 1</ion-label>
+      <ion-input type="text" [(ngModel)]="car.image1" name="image1" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">image 2</ion-label>
+      <ion-input type="text" [(ngModel)]="car.image2" name="image2" required></ion-input>
+    </ion-item>
+
+
+    <ion-button expand="full" type="submit">Ajouter la voiture</ion-button>
+  </form>
+</ion-content>

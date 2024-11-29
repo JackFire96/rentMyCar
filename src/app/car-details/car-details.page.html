@@ -1,0 +1,10 @@
+<ion-item *ngFor="let car of car">
+  <ion-thumbnail slot="start">
+    <img [src]="car.image1" alt="{{ car.brand }}" />
+    <img [src]="car.image2" alt="{{ car.brand }}" />
+  </ion-thumbnail>
+  <ion-label>
+    <h2>{{ car.brand }}</h2>
+    <p>Modèle : {{ car.model }}</p>
+  </ion-label>
+</ion-item>
